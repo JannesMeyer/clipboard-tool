@@ -1,12 +1,18 @@
-var textToCopy;
+var isBrowser = (typeof window !== 'undefined');
+var clipboardText;
 
-document.addEventListener('copy', ev => {
-	ev.preventDefault();
-	ev.clipboardData.setData('text/plain', textToCopy);
-	textToCopy = undefined;
-});
+if (isBrowser) {
+	document.addEventListener('copy', ev => {
+		ev.preventDefault();
+		ev.clipboardData.setData('text/plain', clipboardText);
+		clipboardText = undefined;
+	});
+}
 
 export function write(text) {
-	textToCopy = text;
+	if (!isBrowser) {
+		return;
+	}
+	clipboardText = text;
 	document.execCommand('copy');
 }

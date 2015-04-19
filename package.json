@@ -1,6 +1,6 @@
 {
   "name": "clipboard-tool",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Copy text to the clipboard (inside the browser)",
   "keywords": [ "clipboard", "copy", "text" ],
   "author": "Jannes Meyer <jannes.meyer@gmail.com>",
