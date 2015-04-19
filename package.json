@@ -7,12 +7,10 @@
   "license": "GPLv3",
   "repository": "JannesMeyer/clipboard-tool",
   "scripts": {
-    "prepublish": "make",
-    "test": "make test"
+    "prepublish": "make"
   },
   "main": "clipboard-tool.es5.js",
   "devDependencies": {
-    "babel": "x",
-    "jasmine": "^2.2.1"
+    "babel": "x"
   }
 }
