@@ -4,7 +4,7 @@
   "description": "Copy text to the clipboard (in the browser)",
   "keywords": [ "clipboard", "copy", "text", "browser" ],
   "author": "Jannes Meyer <jannes.meyer@gmail.com>",
-  "license": "GPLv3",
+  "license": "LGPLv3",
   "repository": "JannesMeyer/clipboard-tool",
   "scripts": {
     "prepublish": "make"
