@@ -10,9 +10,8 @@ if (isBrowser) {
 }
 
 export function write(text) {
-	if (!isBrowser) {
-		return;
+	if (isBrowser) {
+		clipboardText = text;
+		document.execCommand('copy');
 	}
-	clipboardText = text;
-	document.execCommand('copy');
 }

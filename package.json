@@ -1,8 +1,8 @@
 {
   "name": "clipboard-tool",
-  "version": "1.0.2",
-  "description": "Copy text to the clipboard (inside the browser)",
-  "keywords": [ "clipboard", "copy", "text" ],
+  "version": "1.0.3",
+  "description": "Copy text to the clipboard (in the browser)",
+  "keywords": [ "clipboard", "copy", "text", "browser" ],
   "author": "Jannes Meyer <jannes.meyer@gmail.com>",
   "license": "GPLv3",
   "repository": "JannesMeyer/clipboard-tool",
