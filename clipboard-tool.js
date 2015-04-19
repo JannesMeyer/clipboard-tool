@@ -1,4 +1,5 @@
 var isBrowser = (typeof window !== 'undefined');
+var prefix = "[clipboard-tool] ";
 var clipboardText;
 
 if (isBrowser) {
@@ -12,6 +13,11 @@ if (isBrowser) {
 export function write(text) {
 	if (isBrowser) {
 		clipboardText = text;
-		document.execCommand('copy');
+		var success = document.execCommand('copy');
+		if (!success) {
+			console.warn(prefix + "Couldn't copy because the browser doesn't allow it.");
+		}
+	} else {
+		console.warn(prefix + "Couldn't copy because this is running on the server.");
 	}
 }
