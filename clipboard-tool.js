@@ -10,11 +10,14 @@ if (isBrowser) {
 	});
 }
 
-export function write(text) {
+export function write(text, fallbackToPrompt) {
 	if (isBrowser) {
 		clipboardText = text;
 		var success = document.execCommand('copy');
 		if (!success) {
+			if (fallbackToPrompt) {
+				window.prompt('Copy to clipboard using Ctrl/Cmd+C', clipboardText);
+			}
 			console.warn(prefix + "Couldn't copy because the browser doesn't allow it.");
 		}
 	} else {
