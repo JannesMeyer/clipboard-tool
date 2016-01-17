@@ -4,9 +4,7 @@
 [![Dependencies](https://david-dm.org/JannesMeyer/clipboard-tool.svg)](https://david-dm.org/JannesMeyer/clipboard-tool)
 [![Development Dependencies](https://david-dm.org/JannesMeyer/clipboard-tool/dev-status.svg)](https://david-dm.org/JannesMeyer/clipboard-tool#info=devDependencies)
 
-Installation:
-
-	npm install clipboard-tool --save
+[![npm](https://nodei.co/npm/clipboard-tool.png?compact=true)](https://www.npmjs.com/package/clipboard-tool)
 
 ## Example
 
