@@ -26,7 +26,7 @@ If you are creating a Chrome or Opera extension, be sure to include the `clipboa
 
 Download source and compile:
 
-	git clone git@github.com:[USERNAME]/chrome-tool.git
+	git clone git@github.com:[USERNAME]/clipboard-tool.git
 	make
 
 Watch for changes and recompile:
