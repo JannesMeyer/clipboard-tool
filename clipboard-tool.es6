@@ -1,12 +1,11 @@
 var isBrowser = (typeof window !== 'undefined');
-var prefix = "[clipboard-tool] ";
-var clipboardText;
+var clipboardText = null;
 
 if (isBrowser) {
 	document.addEventListener('copy', ev => {
 		ev.preventDefault();
 		ev.clipboardData.setData('text/plain', clipboardText);
-		clipboardText = undefined;
+		clipboardText = null;
 	});
 }
 
@@ -15,9 +14,9 @@ export function write(text) {
 		clipboardText = text;
 		var success = document.execCommand('copy');
 		if (!success) {
-			console.warn(prefix + "Couldn't copy because the browser doesn't allow it.");
+			console.warn('[clipboard-tool] Could not copy because the browser does not allow it.');
 		}
 	} else {
-		console.warn(prefix + "Couldn't copy because this is running on the server.");
+		console.warn('[clipboard-tool] Could not copy because this is running on the server.');
 	}
 }
