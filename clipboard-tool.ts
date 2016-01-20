@@ -4,12 +4,12 @@ var clipboardText = null;
 if (isBrowser) {
 	document.addEventListener('copy', ev => {
 		ev.preventDefault();
-		ev.clipboardData.setData('text/plain', clipboardText);
+		ev['clipboardData'].setData('text/plain', clipboardText);
 		clipboardText = null;
 	});
 }
 
-export function write(text) {
+export function write(text: string): void {
 	if (isBrowser) {
 		clipboardText = text;
 		var success = document.execCommand('copy');
