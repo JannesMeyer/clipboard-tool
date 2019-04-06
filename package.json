@@ -1,9 +1,12 @@
 {
   "name": "clipboard-tool",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Copy text to the clipboard (in the browser)",
   "keywords": [
-      "clipboard", "copy", "text", "browser"
+    "clipboard",
+    "copy",
+    "text",
+    "browser"
   ],
   "author": "Jannes Meyer <jannes.meyer@gmail.com>",
   "license": "LGPL-3.0",
@@ -11,12 +14,10 @@
   "main": "clipboard-tool.js",
   "typings": "clipboard-tool.ts",
   "scripts": {
-    "prepublish": "make clean && make"
+    "prepublish": "tsc",
+    "start": "tsc --watch"
   },
   "devDependencies": {
-    "babel-cli": "^6.3.26",
-    "babel-plugin-syntax-flow": "^6.3.13",
-    "babel-plugin-transform-flow-strip-types": "^6.4.0",
-    "babel-preset-es2015": "^6.3.13"
+    "typescript": "^3.4.2"
   }
 }
