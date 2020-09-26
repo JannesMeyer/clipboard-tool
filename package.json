@@ -14,10 +14,10 @@
   "main": "clipboard-tool.js",
   "typings": "clipboard-tool.ts",
   "scripts": {
-    "prepublish": "tsc",
-    "start": "tsc --watch"
+    "prepare": "tsc",
+    "start": "tsc -w"
   },
   "devDependencies": {
-    "typescript": "^3.4.2"
+    "typescript": "^4.0.3"
   }
 }
